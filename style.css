@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap');
+
+li {
+    color: cornflowerblue;
+    background-color: black;
+    border-radius: 50cm;
+    text-align: center;
+    list-style-type: none;
+    font-size: 25pt;
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+}
+#astroNames{
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+body{
+    background-image: url(Space.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+p {
+    font-family: 'Geostar Fill', cursive;
+    font-size: 40pt;
+    color: white;
+    text-align: center;
+}
+#spacePeople{
+    color: aquamarine;
+}
+img {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    left: -10000;
+    transform: rotate(140deg);
+    animation: zipIn 10s infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+
+@keyframes zipIn {
+    from {left: -1000px;}
+    to {left: 2000px;}
+    from {transform: rotate(0deg);}
+    to {transform: rotate(4000deg);}
+  }
